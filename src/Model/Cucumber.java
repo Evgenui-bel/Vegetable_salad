@@ -1,35 +1,59 @@
-public class Cabbage extends Ingredients {
+package Model;
+
+public class Cucumber extends Ingredients {
     {
-        System.out.println("You chose a cabbage, a great choise!");
+        System.out.println("You chose a cucumber, a great choise!");
     }
-    public Cabbage () {
-        super.name = "Cabbage";
-        super.calories = 28;
+
+    public Cucumber() {
+        super.name = "Cucumber";
+        super.calories = 15;
         super.weight = 100;
     }
-    public Cabbage(String name, int calories, int weight) {
+
+    public Cucumber(String name, int calories, int weight) {
         super.name = name;
         super.calories = calories;
         super.weight = weight;
     }
+
     @Override
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+
     @Override
     public void print_salad() {
         System.out.print(name + " ");
     }
+
     @Override
     public void SetName() {
         super.name = name;
     }
+
+    @Override
+    public String GetName() {
+        return name;
+    }
+
     @Override
     public void SetWeight() {
         super.weight = weight;
     }
+
+    @Override
+    public int GetWeight() {
+        return weight;
+    }
+
     @Override
     public void SetCalories() {
         super.calories = calories;
+    }
+
+    @Override
+    public int GetCalories() {
+        return calories;
     }
 }

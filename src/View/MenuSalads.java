@@ -1,5 +1,9 @@
+package View;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import Controller.*;
+import Model.*;
 
 public class MenuSalads {
     protected static int choise = 10;
