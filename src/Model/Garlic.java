@@ -28,7 +28,7 @@ public class Garlic extends Ingredients {
     }
 
     @Override
-    public void SetName() {
+    public void SetName(String name) {
         super.name = name;
     }
 
@@ -38,7 +38,7 @@ public class Garlic extends Ingredients {
     }
 
     @Override
-    public void SetWeight() {
+    public void SetWeight(int weight) {
         super.weight = weight;
     }
 
@@ -48,7 +48,7 @@ public class Garlic extends Ingredients {
     }
 
     @Override
-    public void SetCalories() {
+    public void SetCalories(int calories) {
         super.calories = calories;
     }
 

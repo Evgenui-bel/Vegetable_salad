@@ -6,12 +6,12 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 public class SaltOrNot {
     protected static  String salt = "Not salted";
-    /*public void SetSalt (String salt) {
+    public void SetSalt (String salt) {
         this.salt = salt;
     }
     public String GetSalt() {
         return salt;
-    }*/
+    }
     public static void Salt (Ingredients[] salade) {
         boolean a = true;
         while (a) {

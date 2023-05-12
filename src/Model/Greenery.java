@@ -1,7 +1,5 @@
 package Model;
 
-import Model.Ingredients;
-
 public class Greenery extends Ingredients {
     {
         System.out.println("You chose a greenery, a great choise!");
@@ -30,7 +28,7 @@ public class Greenery extends Ingredients {
     }
 
     @Override
-    public void SetName() {
+    public void SetName(String name) {
         super.name = name;
     }
 
@@ -40,7 +38,7 @@ public class Greenery extends Ingredients {
     }
 
     @Override
-    public void SetWeight() {
+    public void SetWeight(int weight) {
         super.weight = weight;
     }
 
@@ -50,7 +48,7 @@ public class Greenery extends Ingredients {
     }
 
     @Override
-    public void SetCalories() {
+    public void SetCalories(int calories) {
         super.calories = calories;
     }
 
