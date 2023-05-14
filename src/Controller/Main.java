@@ -33,33 +33,13 @@ public class Main {
         while (true) {
             switch (MenuSalads.show_menu_operations()) {
                 case 1:
-                    int maxV = 0;
-                    System.out.print("Total weight is: ");
-                    for (int i = 0; i <= salad.salad.length - 1; i++) {
-                        maxV += salad.salad[i].GetWeight();
-                    }
-                    System.out.print(maxV + "\n");
+                    System.out.println(TotalWeight.AllWeight(salad));
                     break;
                 case 2:
-                    int maxCal = 0;
-                    System.out.print("Total calories is: ");
-                    for (int i = 0; i <= salad.salad.length - 1; i++) {
-                        maxCal += salad.salad[i].GetCalories();
-                    }
-                    System.out.print(maxCal + "\n");
+                    System.out.println(TotalCalories.AllCalories(salad));
                     break;
                 case 3:
-                    int HighestCalories = salad.salad[0].GetCalories();
-                    for (int i = 0; i <= salad.salad.length - 1; i++) {
-                        if (HighestCalories < salad.salad[i].GetCalories()) {
-                            HighestCalories = salad.salad[i].GetCalories();
-                        }
-                    }
-                    for (int j = 0; j <= salad.salad.length - 1; j++) {
-                        if (HighestCalories == salad.salad[j].GetCalories()) {
-                            System.out.print("Most caloric ingredient: " + salad.salad[j].GetName() + "\n");
-                        }
-                    }
+                    System.out.println(MostCaloricIngredients.Caloric(salad));
                     break;
                 case 0:
                     System.exit(0);
@@ -67,15 +47,5 @@ public class Main {
                     System.out.println("Wrong order number selected!");
             }
         }
-        //Пример копирования объекта
-        /*Model.Tomato tomato = new Tomato();
-        function(tomato);
-        public static Model.Tomato function (Tomato tomato2) {
-            try {
-                Model.Tomato tomat = (Tomato) tomato2.clone();
-            } catch (CloneNotSupportedException e) {
-                e.printStackTrace();
-            }
-        }*/
     }
 }

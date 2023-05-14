@@ -18,7 +18,7 @@ class ChampignonTest {
     @Test
     void setName() {
         champignon.SetName("Champignon1");
-        assertEquals("Champignon1",champignon.GetName());
+        assertEquals("Champignon1", champignon.GetName());
     }
 
     @Test
@@ -29,7 +29,7 @@ class ChampignonTest {
     @Test
     void setWeight() {
         champignon.SetWeight(101);
-        assertEquals(101,champignon.GetWeight());
+        assertEquals(101, champignon.GetWeight());
     }
 
     @Test
@@ -40,7 +40,7 @@ class ChampignonTest {
     @Test
     void setCalories() {
         champignon.SetCalories(101);
-        assertEquals(101,champignon.GetCalories());
+        assertEquals(101, champignon.GetCalories());
     }
 
     @Test
